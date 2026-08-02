@@ -6,7 +6,7 @@ a retry and why); if even that fails, a deterministic extract ships. Run it:
 
     python examples/summarize.py
 """
-from councilgate import AuditGate, Severity, check
+from quorumgate import AuditGate, Severity, check
 
 ARTICLE = (
     "The city council approved the riverside redevelopment plan on Tuesday. "

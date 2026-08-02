@@ -2,7 +2,7 @@ import json
 
 import pytest
 
-from councilgate import (
+from quorumgate import (
     AuditGate,
     Council,
     JudgeArbiter,

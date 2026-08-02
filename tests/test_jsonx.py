@@ -1,6 +1,6 @@
 import pytest
 
-from councilgate import extract_json
+from quorumgate import extract_json
 
 
 def test_plain_json():

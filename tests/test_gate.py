@@ -1,6 +1,6 @@
 import pytest
 
-from councilgate import AuditGate, Failure, GateError, Severity, check
+from quorumgate import AuditGate, Failure, GateError, Severity, check
 
 
 @check("must_contain_summary")

@@ -1,4 +1,4 @@
-"""councilgate -- never ship unverified LLM output.
+"""quorumgate -- never ship unverified LLM output.
 
 A zero-dependency reliability layer for LLM pipelines: multi-model councils
 with pluggable arbitration, severity-graded audit gates with bounded retries,

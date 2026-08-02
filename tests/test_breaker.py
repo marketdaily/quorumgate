@@ -1,4 +1,4 @@
-from councilgate import CircuitBreaker
+from quorumgate import CircuitBreaker
 
 
 def test_opens_after_max_strikes():

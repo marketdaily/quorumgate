@@ -2,7 +2,7 @@ import json
 
 import pytest
 
-from councilgate import (
+from quorumgate import (
     CircuitBreaker,
     Council,
     HighestConfidenceArbiter,

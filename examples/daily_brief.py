@@ -14,7 +14,7 @@ clients (OpenAI, Anthropic, Gemini, a local server...) by changing only the
 import json
 import random
 
-from councilgate import (
+from quorumgate import (
     AuditGate,
     CircuitBreaker,
     Council,

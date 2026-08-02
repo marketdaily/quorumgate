@@ -3,7 +3,7 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "councilgate"
+name = "quorumgate"
 version = "0.1.0"
 description = "Never ship unverified LLM output: multi-model councils, severity-graded audit gates, bounded retries, deterministic fallbacks. Zero dependencies."
 readme = "README.md"
@@ -41,7 +41,7 @@ dev = ["pytest>=7"]
 where = ["src"]
 
 [tool.setuptools.package-data]
-councilgate = ["py.typed"]
+quorumgate = ["py.typed"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

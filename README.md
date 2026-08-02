@@ -1,8 +1,8 @@
-# councilgate
+# quorumgate
 
 **Never ship unverified LLM output.**
 
-`councilgate` is a zero-dependency reliability layer for LLM pipelines. It was
+`quorumgate` is a zero-dependency reliability layer for LLM pipelines. It was
 distilled from a production system that emails AI-generated reports to real
 subscribers every day, where a hallucinated number or a half-rendered template
 is not a bug ticket — it lands in someone's inbox. The rules that system lives
@@ -27,13 +27,13 @@ test. The framework supplies structure; you supply models, checks, and
 fallbacks.
 
 ```
-pip install councilgate      # stdlib only, Python >= 3.9
+pip install quorumgate      # stdlib only, Python >= 3.9
 ```
 
 ## Quickstart
 
 ```python
-from councilgate import AuditGate, check, Severity
+from quorumgate import AuditGate, check, Severity
 
 @check("no_invented_links")
 def no_invented_links(output, context):
@@ -68,7 +68,7 @@ raise `GateError`, because silence is the one thing the gate will not do.
 
 ```python
 import json
-from councilgate import Council, Seat, JudgeArbiter, CircuitBreaker
+from quorumgate import Council, Seat, JudgeArbiter, CircuitBreaker
 
 council = Council(
     seats=[
@@ -102,7 +102,7 @@ hedged output, not false confidence.
 ### Composed
 
 ```python
-from councilgate import Pipeline
+from quorumgate import Pipeline
 
 pipeline = Pipeline(
     generate=write_report,          # (attempt, context, council_result) -> str
@@ -170,9 +170,9 @@ systemic alerting across a subscriber batch) and
 
 ## What this is not
 
-`councilgate` is a **reliability layer**, not an orchestration framework.
+`quorumgate` is a **reliability layer**, not an orchestration framework.
 
-| | LangChain / LlamaIndex / DSPy | councilgate |
+| | LangChain / LlamaIndex / DSPy | quorumgate |
 |---|---|---|
 | Core question | *How do I chain LLM calls together?* | *How do I make sure a bad LLM output never reaches a user?* |
 | LLM clients | Bundled integrations | None — you inject callables |
