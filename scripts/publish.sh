@@ -8,4 +8,4 @@ TOK=$(grep -h '^PYPI_TOKEN=' ~/Delvin-agent/.env | head -1 | cut -d= -f2- | tr -
 rm -rf dist
 .venv/bin/python -m build
 .venv/bin/python -m twine upload -u __token__ -p "$TOK" dist/*
-echo "✅ published: https://pypi.org/project/councilgate/"
+echo "✅ published: https://pypi.org/project/quorumgate-llm/"

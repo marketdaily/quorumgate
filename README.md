@@ -27,7 +27,7 @@ test. The framework supplies structure; you supply models, checks, and
 fallbacks.
 
 ```
-pip install quorumgate      # stdlib only, Python >= 3.9
+pip install quorumgate-llm      # stdlib only, Python >= 3.9
 ```
 
 ## Quickstart
